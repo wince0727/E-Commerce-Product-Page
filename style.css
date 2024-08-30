@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+
+nav{
+    font-size: 33px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 8%;
+}
+nav .Logo{
+    font-size: 32px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li a{
+    display: block;
+    margin: 0 10px;
+    color: #000;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 17px;
+    position: relative;
+
+}
+nav ul li a::before{
+    content: '';
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    width: 0;
+    height: 2.5px;
+    transition: all 0.3s ease;
+}
+nav ul li a:hover::before{
+    width:  100%;
+
+}
+nav ul i{
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.flex-box{
+    display: flex;
+    width: 1000px;
+    margin: 20px auto;
+}
+.Left{
+    width:40%;
+}
+.big-img{
+    width: 240px;
+    
+}
+.big-img img{
+    width: inherit;
+   
+}
+.images{
+    display: flexbox;
+    justify-content: space-between;
+    width: 60%;
+    margin-top: 15px;
+}
+.small-img{
+    
+    position: relative;
+    top: 50%;
+    bottom: 50%;
+    transform: translateY(-50%);
+    left: -258px; 
+    margin-top: 350px;
+    margin-left: 10px;
+    width: 57px;
+    height: 80px;
+    overflow: hidden;
+    border: 1.5px soild black;
+}
+.small-img img{
+    width: inherit;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.small-img:hover img{
+    transform: scale(1.2);
+}
+
+.url{
+    position: absolute;
+    top: 100px;
+    right: 480px;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(0, 102, 255);
+}
+.pname{
+    position: absolute;
+    top: 100px;
+    right: 500px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 50px;
+}
+.ratings{
+    position: absolute;
+    top: 190px;
+    right: 575px;
+}
+.ratings i{
+    
+    color: rgb(255, 136, 0);
+}
+.price{
+    position: absolute;
+    top: 200px;
+    right: 640px;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px 0;
+}
+.size{
+    position: absolute;
+    top: 100px;
+    bottom: 180px;
+    right: 310px;
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.size p{
+    font-size: 18px;
+    font-weight: 600;
+}
+.psize{
+    width: 60px;
+    height: 30px;
+    border: 1px solid #ff5e00;
+    color: #000;
+    text-align: center;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.psize.active{
+    border-width: 1.5px;
+    color: #ff5e00;
+    font-weight: 500;
+}
+.quantity{
+    position: absolute;
+    top: 310px;
+    right: 530px;
+    display: flex;
+}
+.quantity p{
+    font-size: 18px;
+    font-weight: 500;
+}
+.quantity input{
+    width: 40px;
+    font-size: 17px;
+    font-weight: 500;
+    text-align: center;
+    margin-left: 15px;
+}
+.btn-box{
+    position: absolute;
+    top: 330px;
+    right: 380px;
+    display: flex;
+    margin-top: 40px;
+}
+.btn-box button{
+    font-size: 18px;
+    padding: 8px 25px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+}
+.cart-btn{
+    background-color: #ff5e00;
+    margin-right: 20px;
+}
+.buy-btn{
+    background-color: #00aeff;
+}
+.cart-btn:hover{
+    background-color: #ff3c00;
+}
+.buy-btn:hover{
+    border-color: #075ddf;
+}
