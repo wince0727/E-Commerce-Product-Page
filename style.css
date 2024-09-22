@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins' , sans-serif;
+    
 }
 
 nav{
@@ -14,6 +15,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding: 20px 8%;
+ 
 }
 nav .Logo{
     font-size: 32px;
@@ -106,7 +108,7 @@ nav ul i{
     right: 480px;
     font-size: 16px;
     font-weight: 400;
-    color: rgb(0, 102, 255);
+    color: rgb(240, 3, 114);
 }
 .pname{
     position: absolute;
@@ -123,7 +125,7 @@ nav ul i{
 }
 .ratings i{
     
-    color: rgb(255, 136, 0);
+    color: rgb(240, 3, 114);
 }
 .price{
     position: absolute;
@@ -149,15 +151,18 @@ nav ul i{
 .psize{
     width: 60px;
     height: 30px;
-    border: 1px solid #ff5e00;
+    border: 1px solid rgb(240, 3, 114);
     color: #000;
     text-align: center;
     margin: 0 10px;
     cursor: pointer;
 }
+.psize:hover{
+    color: rgb(240, 3, 114);
+}
 .psize.active{
     border-width: 1.5px;
-    color: #ff5e00;
+    color: rgb(240, 3, 114);
     font-weight: 500;
 }
 .quantity{
@@ -193,16 +198,19 @@ nav ul i{
     cursor: pointer;
     color: white;
 }
+.btn-box button:hover{
+    color: black;
+}
 .cart-btn{
-    background-color: #ff5e00;
+    background-color: rgb(240, 3, 114);
     margin-right: 20px;
 }
 .buy-btn{
-    background-color: #00aeff;
+    background-color: #075ddf;
 }
 .cart-btn:hover{
-    background-color: #ff3c00;
+    background-color: rgb(240, 83, 156);
 }
 .buy-btn:hover{
-    border-color: #075ddf;
+    background-color: #7dabf0;
 }
